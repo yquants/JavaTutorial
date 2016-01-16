@@ -1,2 +1,2 @@
-# JavaTutorial
-Examples
+# Java Tutorial
+Learning by Examples
