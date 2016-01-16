@@ -1,0 +1,26 @@
+package com.yquants.drools;
+
+import com.yquants.drools.Message;
+import java.math.BigDecimal;
+
+global java.util.List list
+
+rule simple
+when
+	$m:Message(message=="Hello")
+	Message(message != Message.GOODBYE)
+then
+	System.out.println("Message: "+$m.getMessage());
+end
+
+rule global_variable
+	dialect "java"
+when
+	$bd: BigDecimal()
+	eval($bd.compareTo(BigDecimal.ZERO) > 0)
+then
+	list.add($bd);
+end
+
+
+
