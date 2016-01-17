@@ -15,7 +15,7 @@ public class ArithmeticCalculatorImpl implements ArithmeticCalculator {
 	}
 
 	public int sub(int i, int j) {
-		return i + j;
+		return i - j;
 	}
 
 	public int multiple(int i, int j) {
