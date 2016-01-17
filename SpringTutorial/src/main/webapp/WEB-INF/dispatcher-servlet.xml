@@ -1,3 +1,4 @@
+<!-- It's an application context for servlet DispatcherServlet -->
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -6,11 +7,10 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
  
- <context:component-scan base-package="com.jdon.spring.controller" />
-
 	<!-- Where to scan the controller with annotation introduced by Spring4 -->
 	<context:component-scan base-package="com.yquants.springtutorial.mvc.v4"/>
 
+	<!-- where to search the View, a very normal configuration -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/</value>
@@ -19,4 +19,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 			<value>.jsp</value>
 		</property>
 	</bean>
+	
+	<!-- A separated AOP Configuration imported -->
+	<import resource="spring-aop-config.xml" />
 </beans>
