@@ -30,4 +30,52 @@
   		<version>1.7.13</version>
   	</dependency>
   </dependencies>
+  <build>
+  	<plugins>
+  	<plugin>
+  		<groupId>org.apache.maven.plugins</groupId>
+  		<artifactId>maven-jar-plugin</artifactId>
+  		<version>2.4</version>
+  		<executions>  
+                    <execution>  
+                        <id>default-jar</id>  
+                        <phase>package</phase>  
+                        <goals>  
+                            <goal>jar</goal>  
+                        </goals>  
+                    </execution>  
+                </executions>  
+                <configuration>  
+                    <archive>  
+                        <manifest>  
+                            <addClasspath>true</addClasspath>  
+                            <mainClass>com.yquants.turorial.jse.log.Log4jTest</mainClass>  
+                            <classpathPrefix>lib/</classpathPrefix>  
+                        </manifest>  
+                        <manifestEntries>  
+                            <mode>development</mode>  
+                            <url>abc</url>  
+                        </manifestEntries>  
+                    </archive>  
+                </configuration>  
+  	</plugin>
+  	<plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-dependency-plugin</artifactId>  
+                <version>2.6</version>  
+                <executions>  
+                    <execution>  
+                        <id>copy</id>  
+                        <phase>package</phase>  
+                        <goals>  
+                            <goal>copy-dependencies</goal>  
+                        </goals>  
+                    </execution>  
+                </executions>  
+                <configuration>  
+                    <outputDirectory>target/lib</outputDirectory>  
+                </configuration>  
+            </plugin> 
+  	</plugins>
+  </build>
 </project>
