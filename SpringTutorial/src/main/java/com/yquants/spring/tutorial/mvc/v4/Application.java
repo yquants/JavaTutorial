@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.mvc.v4;
+package com.yquants.spring.tutorial.mvc.v4;
 
 //@SpringBootApplication
 public class Application {

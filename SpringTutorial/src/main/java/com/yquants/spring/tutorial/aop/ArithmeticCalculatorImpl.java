@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.aop;
+package com.yquants.spring.tutorial.aop;
 
 import org.springframework.stereotype.Component;
 

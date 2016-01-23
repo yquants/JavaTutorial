@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.quickstart;
+package com.yquants.spring.tutorial.ioc;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

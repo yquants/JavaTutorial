@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.quickstart;
+package com.yquants.spring.tutorial.ioc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

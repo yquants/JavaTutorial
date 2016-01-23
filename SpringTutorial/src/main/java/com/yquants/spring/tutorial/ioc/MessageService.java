@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.quickstart;
+package com.yquants.spring.tutorial.ioc;
 
 public interface MessageService {
 

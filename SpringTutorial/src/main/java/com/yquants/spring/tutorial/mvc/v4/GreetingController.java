@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.mvc.v4;
+package com.yquants.spring.tutorial.mvc.v4;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.yquants.springtutorial.aop.ArithmeticCalculator;
+import com.yquants.spring.tutorial.aop.ArithmeticCalculator;
 
 /**
  * Spring Controller

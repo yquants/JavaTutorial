@@ -1,4 +1,4 @@
-package com.yquants.springtutorial.aop;
+package com.yquants.spring.tutorial.aop;
 
 import java.util.Arrays;
 import java.util.List;
