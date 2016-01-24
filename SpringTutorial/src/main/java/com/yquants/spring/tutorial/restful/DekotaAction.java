@@ -1,4 +1,4 @@
-package com.yquants.spring.restful;
+package com.yquants.spring.tutorial.restful;
 
 
 import java.util.ArrayList;
