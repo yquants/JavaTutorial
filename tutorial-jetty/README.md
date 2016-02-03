@@ -32,6 +32,10 @@ It a simple demo to show how to embed Jetty into Spring application based on XML
 <li>Java: JDK_1.8.0_72</li>
 <li>IDE: eclipse</li>
 <li>Maven: 3.3.9</li>
+<li>Spring: 4.2.4.RELEASE</li>
+<li>Jetty: 9.3.7.v20160115</li>
 </ul>
 
+Reference:
+<a href="http://www.eclipse.org/jetty/documentation/current/frameworks.html#d0e20306">http://www.eclipse.org/jetty/documentation/current/frameworks.html#d0e20306</a>
 </html>
